@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dibujando con canvas</title>
+  </head>
+  <body>
+    <h1>Dibujo en canvas</h1>
+    <canvas width="300" height="300" id="dibujito"></canvas>
+    <p> Así queda tu dibujo</p>
+    <script>
+    var d = document.getElementById("dibujito");
+    var lienzo= d.getContext("2d");
+
+   lienzo.begingPatch();
+    lienzo.strokeStyle= "red";
+    lienzo.moveTo(100,100);
+    lienzo.lineTo(200,200);
+    lienzo.stroke();
+    liezo.clsosePatch();</script>
+
+    </body>
+  </html>
